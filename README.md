@@ -1,6 +1,6 @@
 # AniPlay
 
-AniPlay é um aplicativo de streaming desenvolvido em Kotlin que simula um serviço para assistir a desenhos japoneses (animes). O aplicativo permite aos usuários navegar por diferentes títulos, gerenciar suas listas de favoritos, e assistir a animes diretamente em seus dispositivos móveis.
+AniPlay é um aplicativo de streaming desenvolvido em Kotlin que simula um serviço para assistir a desenhos japoneses (animes). O objetivo do aplicativo é permitir aos usuários navegar por diferentes títulos, gerenciar suas listas de favoritos, e assistir a animes diretamente em seus dispositivos móveis.
 
 ## Funcionalidades
 
