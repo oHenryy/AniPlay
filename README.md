@@ -55,7 +55,7 @@ AniPlay é um aplicativo de streaming desenvolvido em Kotlin que simula um servi
 
 1. Clone este repositório em sua máquina local usando o comando:
    ```
-   git clone https://github.com/seu-usuario/AniPlay.git
+   git clone https://github.com/oHenryy/AniPlay.git
    ```
 2. Abra o projeto no Android Studio.
 3. Certifique-se de que o Android Studio está configurado com o SDK Android necessário.
