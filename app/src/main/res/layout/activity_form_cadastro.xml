@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".View.FormCadastro">
+
+    <TextView
+        android:id="@+id/titulo_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_cadastro"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        android:id="@+id/conteiner_cadastro"
+        style="@style/ConteinerComponents"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo_cadastro"
+        />
+
+    <EditText
+        android:id="@+id/edtNome"
+        style="@style/Edit_Text"
+        android:hint="Nome"
+        android:textColor="@color/black"
+        android:textColorHint="@color/common_google_signin_btn_text_light"
+        android:drawableRight="@drawable/ic_user"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/conteiner_cadastro"
+        app:layout_constraintEnd_toEndOf="@id/conteiner_cadastro"
+        app:layout_constraintTop_toTopOf="@id/conteiner_cadastro"
+        />
+    <EditText
+        android:id="@+id/edtEmail"
+        style="@style/Edit_Text"
+        android:hint="Email"
+        android:textColor="@color/black"
+        android:textColorHint="@color/common_google_signin_btn_text_light"
+        android:drawableRight="@drawable/ic_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@id/conteiner_cadastro"
+        app:layout_constraintEnd_toEndOf="@id/conteiner_cadastro"
+        app:layout_constraintTop_toBottomOf="@id/edtNome"
+        />
+
+    <EditText
+        android:id="@+id/edtSenha"
+        style="@style/Edit_Text"
+        android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"
+        android:hint="Senha"
+        android:textColor="@color/black"
+        android:textColorHint="@color/common_google_signin_btn_text_light"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toEndOf="@id/conteiner_cadastro"
+        app:layout_constraintStart_toStartOf="@id/conteiner_cadastro"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btCadastrar"
+        style="@style/Button"
+        android:text="Cadastrar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/conteiner_cadastro" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

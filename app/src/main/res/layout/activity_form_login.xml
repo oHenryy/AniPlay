@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".View.FormLogin">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:text="ANIPLAY"
+        android:fontFamily="cursive"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/conteiner_components"
+        style="@style/ConteinerComponents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/edtLogin"
+        style="@style/Edit_Text"
+        android:textColor="@color/black"
+        android:hint="Email"
+        android:textColorHint="@color/common_google_signin_btn_text_light"
+        android:inputType="textEmailAddress"
+        android:drawableRight="@drawable/ic_email"
+        app:layout_constraintStart_toStartOf="@id/conteiner_components"
+        app:layout_constraintEnd_toEndOf="@id/conteiner_components"
+        app:layout_constraintTop_toTopOf="@id/conteiner_components"
+        />
+
+    <EditText
+        android:id="@+id/edtSenha"
+        style="@style/Edit_Text"
+        android:textColor="@color/black"
+        android:hint="Senha"
+        android:textColorHint="@color/common_google_signin_btn_text_light"
+        android:inputType="numberPassword"
+        android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"
+        app:layout_constraintStart_toStartOf="@id/conteiner_components"
+        app:layout_constraintEnd_toEndOf="@id/conteiner_components"
+        app:layout_constraintTop_toBottomOf="@id/edtLogin"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btEntrar"
+        style="@style/Button"
+        android:onClick="onClick"
+        android:text="@string/entrar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtSenha" />
+
+    <Button
+        android:id="@+id/btPassReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:text="Esqueceu sua senha? Clique aqui!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/conteiner_components"
+        />
+
+    <Button
+        android:id="@+id/btCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"
+        android:text="@string/text_cadastro"
+        app:layout_constraintTop_toBottomOf="@id/btPassReset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>

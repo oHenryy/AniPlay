@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".View.home">
+
+        <ImageView
+            android:id="@+id/imgprin"
+            android:src="@drawable/deathnote"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esse anime é um novo lançamento \n e sempre nos trás novidades  que nos\n prende a assistir todos os capitulos"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toStartOf="@id/imgprin"
+            app:layout_constraintTop_toTopOf="@id/imgprin"
+            />
+
+        <TextView
+            android:id="@+id/tvpopulares"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Populares na Aniplay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgprin"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+
+        <HorizontalScrollView
+            android:id="@+id/carrosel1"
+            android:fillViewport="true"
+            app:layout_constraintTop_toBottomOf="@id/tvpopulares"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/img1c1"
+                    style="@style/image"
+                    android:src="@drawable/deathnote" />
+
+                <ImageButton
+                    android:id="@+id/img2c1"
+                    style="@style/image"
+                    android:layout_toRightOf="@+id/img1c1"
+                    android:src="@drawable/naruto"/>
+
+                <ImageButton
+                    android:id="@+id/img3c1"
+                    style="@style/image"
+                    android:layout_toRightOf="@+id/img2c1"
+                    android:src="@drawable/tokyo" />
+
+                <ImageButton
+                    android:id="@+id/img4c1"
+                    style="@style/image"
+                    android:layout_toRightOf="@+id/img3c1"
+                    android:src="@drawable/one"/>
+
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tvrecomendados"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Recomendados para você"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/carrosel1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+
+        <HorizontalScrollView
+            android:id="@+id/carrosel2"
+            app:layout_constraintTop_toBottomOf="@id/tvrecomendados"
+            android:fillViewport="true"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/img1c2"
+                    style="@style/image"
+                    android:src="@drawable/you" />
+
+                <ImageButton
+                    android:id="@+id/img2c2"
+                    style="@style/image"
+                    android:layout_toRightOf="@+id/img1c2"
+                    android:src="@drawable/xxxholic" />
+
+                <ImageButton
+                    android:id="@+id/img3c2"
+                    style="@style/image"
+                    android:layout_toRightOf="@+id/img2c2"
+                    android:src="@drawable/bleach"/>
+
+                <ImageButton
+                    android:id="@+id/img4c2"
+                    style="@style/image"
+                    android:layout_toRightOf="@+id/img3c2"
+                    android:src="@drawable/volei" />
+
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tvsoaqui"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Estes você só encontra na aniplay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/carrosel2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+
+        <HorizontalScrollView
+            android:id="@+id/carrosel3"
+            app:layout_constraintTop_toBottomOf="@id/tvsoaqui"
+            android:fillViewport="true"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/img1c3"
+                    style="@style/image"
+                    android:src="@drawable/demon" />
+
+                <ImageButton
+                    android:id="@+id/img2c3"
+                    style="@style/image"
+                    android:layout_toRightOf="@+id/img1c3"
+                    android:src="@drawable/dbz" />
+
+                <ImageButton
+                    android:id="@+id/img3c3"
+                    style="@style/image"
+                    android:layout_toRightOf="@+id/img2c3"
+                    android:src="@drawable/bell" />
+
+                <ImageButton
+                    android:id="@+id/img4c3"
+                    style="@style/image"
+                    android:layout_toRightOf="@+id/img3c3"
+                    android:src="@drawable/dororo"/>
+
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tvtendencias"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Tendências da semana"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/carrosel3"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+
+        <HorizontalScrollView
+            android:id="@+id/carrosel4"
+            app:layout_constraintTop_toBottomOf="@id/tvtendencias"
+            android:fillViewport="true"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/img1c4"
+                    style="@style/image"
+                    android:src="@drawable/ontitan" />
+
+                <ImageButton
+                    android:id="@+id/img2c4"
+                    style="@style/image"
+                    android:layout_toRightOf="@+id/img1c4"
+                    android:src="@drawable/yoyo"/>
+
+                <ImageButton
+                    android:id="@+id/img3c4"
+                    style="@style/image"
+                    android:layout_toRightOf="@+id/img2c4"
+                    android:src="@drawable/pokemon"/>
+
+                <ImageButton
+                    android:id="@+id/img4c4"
+                    style="@style/image"
+                    android:layout_toRightOf="@+id/img3c4"
+                    android:src="@drawable/bay"/>
+
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

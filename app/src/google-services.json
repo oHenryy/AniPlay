@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1097824939003",
+    "project_id": "aniplay-project",
+    "storage_bucket": "aniplay-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097824939003:android:3f1688a52130784c19b95e",
+        "android_client_info": {
+          "package_name": "com.example.projeto_aniplay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097824939003-hhf9irildpef6qc3mu32dpopkk8439dk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projeto_aniplay",
+            "certificate_hash": "e09d486e1dc6cae102c7620056af6f13931fa542"
+          }
+        },
+        {
+          "client_id": "1097824939003-mul2pqv0e63fjpao7k93gts6hh9vnech.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABP4t9Oxr2eKUyWTOIOcdfBBOMPe8XNI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097824939003-mul2pqv0e63fjpao7k93gts6hh9vnech.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

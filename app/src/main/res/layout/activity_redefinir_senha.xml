@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".View.Redefinir_senha">
+
+    <TextView
+        android:id="@+id/titulo_redefinir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite seu email"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/conteiner_components"
+        style="@style/ConteinerComponents"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo_redefinir"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        style="@style/Edit_Text"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:drawableRight="@drawable/ic_email"
+        app:layout_constraintStart_toStartOf="@id/conteiner_components"
+        app:layout_constraintEnd_toEndOf="@id/conteiner_components"
+        app:layout_constraintTop_toTopOf="@id/conteiner_components"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btEnviar"
+        style="@style/Button"
+        android:text="Enviar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/conteiner_components"
+        app:layout_constraintStart_toStartOf="@+id/conteiner_components"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projeto_aniplay">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/aniplay"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Projeto_aniplay">
+        <activity
+            android:name=".View.home" android:screenOrientation="sensor"
+            android:exported="true" />
+        <activity
+            android:name=".View.PerfilUsuario" android:screenOrientation="sensor"
+            android:exported="true" />
+        <activity
+            android:name=".View.Redefinir_senha" android:screenOrientation="sensor"
+            android:exported="true" />
+        <activity
+            android:name=".View.FormCadastro" android:screenOrientation="sensor"
+            android:exported="true" />
+        <activity
+            android:name=".View.MainActivity" android:screenOrientation="sensor"
+            android:exported="true" />
+        <activity
+            android:name=".View.FormLogin" android:screenOrientation="sensor"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
